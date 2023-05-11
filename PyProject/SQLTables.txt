@@ -1,0 +1,29 @@
+Main_Info
+    id char 6
+    name varchar 30    
+    joined date    
+    division varchar 20
+    position varcher 20     
+
+create table main_info(id char(6) not null primary key,fname varchar(15) not null, joined date not null, dvn varchar(20) not null, pos varchar(20) not null);
+
+
+Finance_Info
+    id char 6
+    pay int
+    last date    
+    bonus int
+
+create table finance_info(id char(6) not null primary key, pay int(10) not null, last date, bonus int);
+
+Demographic_Info
+    id char 6    
+    dob date    
+    father varchar 30   
+    mother varchar 30
+    mobile bigint     
+    country varchar 20 
+    address varchar 50   
+    pin int 8
+
+create table demographic_info(id char(6) not null primary key, dob date not null, father varchar(20), mother varchar(20), mobile bigint not null, address varchar(50) not null, pin int(6) not null, country varchar(20));
